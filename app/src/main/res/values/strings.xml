@@ -11,4 +11,12 @@
     <string name="dob">DOB</string>
     <string name="email">EMAIL</string>
     <string name="last_name">LAST NAME</string>
+    <string name="enter_last_name">enter last name</string>
+    <string name="enter_email">enter email</string>
+    <string name="enter_dob">enter DOB</string>
+    <string name="enter_sex">enter sex</string>
+    <string name="save_profile">SAVE PROFILE</string>
+    <string name="enter_name">enter name</string>
+    <string name="name">NAME</string>
+    <string name="edit_profile_information">EDIT PROFILE INFORMATION</string>
 </resources>

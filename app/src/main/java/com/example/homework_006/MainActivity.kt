@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         binding.btnEditProfile.setOnClickListener {
 
             val intent = Intent(this@MainActivity, EditProfileActivity::class.java)
-
             startActivity(intent)
+
         }
 
 
@@ -29,21 +29,21 @@ class MainActivity : AppCompatActivity() {
         val eDOB = intent.getStringExtra("dob")
         val eSex = intent.getStringExtra("sex")
 
-        when {
-            eName.isNullOrEmpty() -> return
-            eLastName.isNullOrEmpty() -> return
-            eEmail.isNullOrEmpty() -> return
-            eDOB.isNullOrEmpty() -> return
-            eSex.isNullOrEmpty() -> return
-
-            else -> {
-                binding.tVLastName.text = eLastName
-                binding.tVName.text = eName
-                binding.tVSex.text = eSex
-                binding.tVDOB.text = eDOB
-                binding.tVeMail.text = eEmail
-            }
+        if (eName.isNullOrEmpty() && eLastName.isNullOrEmpty() && eEmail.isNullOrEmpty() && eDOB.isNullOrEmpty() && eSex.isNullOrEmpty()) {
+            return
+        } else {
+            binding.tVLastName.text = eLastName
+            binding.tVName.text = eName
+            binding.tVSex.text = eSex
+            binding.tVDOB.text = eDOB
+            binding.tVeMail.text = eEmail
         }
+
+
+
+
+
+
 
 
     }

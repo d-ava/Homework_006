@@ -10,7 +10,7 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="EDIT PROFILE INFORMATION"
+        android:text="@string/edit_profile_information"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +35,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NAME"
+        android:text="@string/name"
         android:layout_marginBottom="-5dp"
         app:layout_constraintStart_toStartOf="@id/gdBeginMargin"
         app:layout_constraintBottom_toTopOf="@id/eTName"
@@ -50,9 +50,10 @@
         android:layout_height="@dimen/tvheight"
         android:background="@drawable/stroke_w_background"
         android:gravity=""
-
+        android:imeOptions="actionDone"
+android:inputType="text"
         android:paddingStart="@dimen/paddingStart"
-        android:hint="enter name"
+        android:hint="@string/enter_name"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/eTLastName"
 
@@ -83,9 +84,10 @@
         android:background="@drawable/stroke_w_background"
         android:gravity=""
         android:paddingStart="@dimen/paddingStart"
-
-        android:hint="enter last name"
+        android:imeOptions="actionDone"
+        android:hint="@string/enter_last_name"
         android:textSize="16sp"
+        android:inputType="text"
 
         app:layout_constraintBottom_toTopOf="@+id/eTeMail"
         app:layout_constraintEnd_toEndOf="@+id/eTeMail"
@@ -103,6 +105,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         android:textColor="@color/black"
+
         />
 
     <androidx.appcompat.widget.AppCompatEditText
@@ -113,9 +116,9 @@
         android:background="@drawable/stroke_w_background"
         android:gravity="center_vertical"
         android:paddingStart="@dimen/paddingStart"
-
-
-        android:hint="enter email"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:hint="@string/enter_email"
         android:textSize="16sp"
 
         app:layout_constraintBottom_toTopOf="@+id/eTDOB"
@@ -143,10 +146,10 @@
         android:background="@drawable/stroke_w_background"
         android:gravity=""
         android:paddingStart="@dimen/paddingStart"
-
-        android:hint="enter DOB"
+        android:imeOptions="actionDone"
+        android:hint="@string/enter_dob"
         android:textSize="16sp"
-
+        android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/eTSex"
         app:layout_constraintEnd_toEndOf="@+id/eTSex"
         app:layout_constraintHorizontal_bias="0.5"
@@ -173,9 +176,9 @@
         android:background="@drawable/stroke_w_background"
         android:gravity=""
         android:paddingStart="@dimen/paddingStart"
-
-
-        android:hint="enter sex"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:hint="@string/enter_sex"
         android:textSize="16sp"
 
 
@@ -193,7 +196,7 @@
         android:background="@drawable/stroke"
 
         android:paddingStart="10dp"
-        android:text="SAVE PROFILE"
+        android:text="@string/save_profile"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eTSex"
