@@ -2,7 +2,7 @@
 <resources>
     <dimen name="tvheight"> 30dp </dimen>
     <dimen name="marginTop"> 15dp </dimen>
-    <dimen name="paddingStart"> 50dp </dimen>
+    <dimen name="paddingStart"> 40dp </dimen>
 
 
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
+
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -17,6 +17,7 @@
         app:layout_constraintStart_toStartOf="@id/gdLeft"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="10dp"
         />
 
     <ImageView
@@ -29,13 +30,13 @@
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/avatar"
-        tools:layout_editor_absoluteY="74dp"
+
 
         />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tVName"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="@dimen/tvheight"
         android:background="@drawable/stroke"
         android:gravity=""
@@ -46,14 +47,14 @@
 
         app:layout_constraintEnd_toEndOf="@+id/tVLastName"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/tVLastName"
+        app:layout_constraintStart_toStartOf="@id/gdBeginMargin"
         app:layout_constraintTop_toBottomOf="@+id/iVProfilePicture"
         app:layout_constraintVertical_bias="0.1"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tVLastName"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="@dimen/tvheight"
         android:layout_marginTop="@dimen/marginTop"
         android:background="@drawable/stroke"
@@ -63,27 +64,27 @@
         app:layout_constraintBottom_toTopOf="@+id/tVeMail"
         app:layout_constraintEnd_toEndOf="@+id/tVeMail"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/tVeMail"
+        app:layout_constraintStart_toStartOf="@+id/gdBeginMargin"
         app:layout_constraintTop_toBottomOf="@+id/tVName" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tVeMail"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="@dimen/tvheight"
         android:layout_marginTop="@dimen/marginTop"
         android:background="@drawable/stroke"
-        android:gravity=""
+        android:gravity="center_vertical"
         android:paddingStart="@dimen/paddingStart"
         android:text="@string/d_avalishvili_gmail_com"
         app:layout_constraintBottom_toTopOf="@+id/tVDOB"
         app:layout_constraintEnd_toEndOf="@+id/tVDOB"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/tVDOB"
+        app:layout_constraintStart_toStartOf="@+id/gdBeginMargin"
         app:layout_constraintTop_toBottomOf="@+id/tVLastName" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tVDOB"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="@dimen/tvheight"
         android:layout_marginTop="@dimen/marginTop"
         android:background="@drawable/stroke"
@@ -93,12 +94,12 @@
         app:layout_constraintBottom_toTopOf="@+id/tVSex"
         app:layout_constraintEnd_toEndOf="@+id/tVSex"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/tVSex"
+        app:layout_constraintStart_toStartOf="@+id/gdBeginMargin"
         app:layout_constraintTop_toBottomOf="@+id/tVeMail" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tVSex"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="@dimen/tvheight"
         android:layout_marginTop="@dimen/marginTop"
         android:background="@drawable/stroke"
@@ -108,12 +109,12 @@
         app:layout_constraintBottom_toTopOf="@+id/btnEditProfile"
         app:layout_constraintEnd_toEndOf="@+id/btnEditProfile"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/btnEditProfile"
+        app:layout_constraintStart_toStartOf="@+id/gdBeginMargin"
         app:layout_constraintTop_toBottomOf="@+id/tVDOB" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnEditProfile"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="@dimen/tvheight"
         android:layout_marginTop="@dimen/marginTop"
         android:background="@drawable/stroke"
@@ -123,7 +124,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tVSex"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintStart_toStartOf="@id/gdBeginMargin"
+        app:layout_constraintEnd_toEndOf="@id/gdEndMargin"
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gdLeft"
@@ -131,6 +135,20 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="@dimen/paddingStart" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdBeginMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="15dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdEndMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="15dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
