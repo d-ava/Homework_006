@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tvheight"> 30dp </dimen>
+    <dimen name="marginTop"> 15dp </dimen>
+    <dimen name="paddingStart"> 50dp </dimen>
+
+
+</resources>

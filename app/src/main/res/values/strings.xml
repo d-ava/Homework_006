@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Homework_006</string>
+    <string name="profile_information">PROFILE INFORMATION</string>
+    <string name="david">David</string>
+    <string name="avalishvili">Avalishvili</string>
+    <string name="d_avalishvili_gmail_com">d.avalishvili@gmail.com</string>
+    <string name="dob_28_08_1982">28-08-1982</string>
+    <string name="male">Male</string>
+    <string name="edit_profile">Edit Profile</string>
+</resources>
