@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT PROFILE INFORMATION"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/gdLeft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/iVProfilePicture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="57dp"
+        app:layout_constraintEnd_toEndOf="@id/gdEndMargin"
+        app:layout_constraintStart_toStartOf="@id/gdLeft"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:layout_marginBottom="-5dp"
+        app:layout_constraintStart_toStartOf="@id/gdBeginMargin"
+        app:layout_constraintBottom_toTopOf="@id/eTName"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/eTName"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tvheight"
+        android:background="@drawable/stroke_w_background"
+        android:gravity=""
+
+        android:paddingStart="@dimen/paddingStart"
+        android:hint="enter name"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/eTLastName"
+
+        app:layout_constraintEnd_toEndOf="@+id/eTLastName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/gdBeginMargin"
+        app:layout_constraintTop_toBottomOf="@+id/iVProfilePicture"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        android:layout_marginBottom="-5dp"
+        app:layout_constraintStart_toStartOf="@id/gdBeginMargin"
+        app:layout_constraintBottom_toTopOf="@id/eTLastName"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/eTLastName"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tvheight"
+        android:layout_marginTop="@dimen/marginTop"
+        android:background="@drawable/stroke_w_background"
+        android:gravity=""
+        android:paddingStart="@dimen/paddingStart"
+
+        android:hint="enter last name"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/eTeMail"
+        app:layout_constraintEnd_toEndOf="@+id/eTeMail"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gdBeginMargin"
+        app:layout_constraintTop_toBottomOf="@+id/eTName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_marginBottom="-5dp"
+        app:layout_constraintStart_toStartOf="@id/gdBeginMargin"
+        app:layout_constraintBottom_toTopOf="@id/eTeMail"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/eTeMail"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tvheight"
+        android:layout_marginTop="@dimen/marginTop"
+        android:background="@drawable/stroke_w_background"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/paddingStart"
+
+
+        android:hint="enter email"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/eTDOB"
+        app:layout_constraintEnd_toEndOf="@+id/eTDOB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gdBeginMargin"
+        app:layout_constraintTop_toBottomOf="@+id/eTLastName" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dob"
+        android:layout_marginBottom="-5dp"
+        app:layout_constraintStart_toStartOf="@id/gdBeginMargin"
+        app:layout_constraintBottom_toTopOf="@id/eTDOB"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/eTDOB"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tvheight"
+        android:layout_marginTop="@dimen/marginTop"
+        android:background="@drawable/stroke_w_background"
+        android:gravity=""
+        android:paddingStart="@dimen/paddingStart"
+
+        android:hint="enter DOB"
+        android:textSize="16sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/eTSex"
+        app:layout_constraintEnd_toEndOf="@+id/eTSex"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gdBeginMargin"
+        app:layout_constraintTop_toBottomOf="@+id/eTeMail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sex"
+        android:layout_marginBottom="-5dp"
+        app:layout_constraintStart_toStartOf="@id/gdBeginMargin"
+        app:layout_constraintBottom_toTopOf="@id/eTSex"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/eTSex"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tvheight"
+        android:layout_marginTop="@dimen/marginTop"
+        android:background="@drawable/stroke_w_background"
+        android:gravity=""
+        android:paddingStart="@dimen/paddingStart"
+
+
+        android:hint="enter sex"
+        android:textSize="16sp"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveProfile"
+        app:layout_constraintEnd_toEndOf="@+id/btnSaveProfile"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/gdBeginMargin"
+        app:layout_constraintTop_toBottomOf="@+id/eTDOB" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveProfile"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/tvheight"
+        android:layout_marginTop="@dimen/marginTop"
+        android:background="@drawable/stroke"
+
+        android:paddingStart="10dp"
+        android:text="SAVE PROFILE"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTSex"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintStart_toStartOf="@id/gdBeginMargin"
+        app:layout_constraintEnd_toEndOf="@id/gdEndMargin"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/paddingStart" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdBeginMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="15dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdEndMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="15dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
