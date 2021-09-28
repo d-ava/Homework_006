@@ -75,7 +75,7 @@
         android:textColor="@color/black"
         />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/eTLastName"
         android:layout_width="0dp"
         android:layout_height="@dimen/tvheight"
@@ -105,7 +105,7 @@
         android:textColor="@color/black"
         />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/eTeMail"
         android:layout_width="0dp"
         android:layout_height="@dimen/tvheight"
@@ -135,7 +135,7 @@
         android:textColor="@color/black"
         />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/eTDOB"
         android:layout_width="0dp"
         android:layout_height="@dimen/tvheight"
@@ -165,7 +165,7 @@
         android:textColor="@color/black"
         />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/eTSex"
         android:layout_width="0dp"
         android:layout_height="@dimen/tvheight"

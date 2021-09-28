@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.homework_006.databinding.ActivityMainBinding
 
+
 class MainActivity : AppCompatActivity() {
 
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
@@ -22,13 +23,27 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        val ename = intent.getStringExtra("name")
-        if (ename.isNullOrEmpty()){
-            return
+        val eName = intent.getStringExtra("name")
+        val eLastName = intent.getStringExtra("lastName")
+        val eEmail = intent.getStringExtra("email")
+        val eDOB = intent.getStringExtra("dob")
+        val eSex = intent.getStringExtra("sex")
 
-        }else binding.tVName.text = ename
+        when {
+            eName.isNullOrEmpty() -> return
+            eLastName.isNullOrEmpty() -> return
+            eEmail.isNullOrEmpty() -> return
+            eDOB.isNullOrEmpty() -> return
+            eSex.isNullOrEmpty() -> return
 
-
+            else -> {
+                binding.tVLastName.text = eLastName
+                binding.tVName.text = eName
+                binding.tVSex.text = eSex
+                binding.tVDOB.text = eDOB
+                binding.tVeMail.text = eEmail
+            }
+        }
 
 
     }

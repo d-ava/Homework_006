@@ -2,7 +2,6 @@ package com.example.homework_006
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.homework_006.databinding.ActivityEditProfileBinding
 
@@ -24,15 +23,15 @@ class EditProfileActivity: AppCompatActivity() {
             val dob:String = binding.eTDOB.text.toString()
             val sex:String = binding.eTSex.text.toString()
 
-            val intentE = Intent(this@EditProfileActivity, MainActivity::class.java)
+            val intent = Intent(this@EditProfileActivity, MainActivity::class.java)
 
-            intentE.putExtra("name", name)
-            intentE.putExtra("lastName", lastName)
-            intentE.putExtra("email", email)
-            intentE.putExtra("dob", dob)
-            intentE.putExtra("sex", sex)
+            intent.putExtra("name", name)
+            intent.putExtra("lastName", lastName)
+            intent.putExtra("email", email)
+            intent.putExtra("dob", dob)
+            intent.putExtra("sex", sex)
 
-            startActivity(intentE)
+            startActivity(intent)
         }
 
 
