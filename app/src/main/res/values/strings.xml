@@ -20,4 +20,5 @@
     <string name="name">NAME</string>
     <string name="edit_profile_information">EDIT PROFILE INFORMATION</string>
     <string name="empty_fields">fill empty fields</string>
+    <string name="wrong_email">wrong email type</string>
 </resources>
